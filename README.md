@@ -7,8 +7,9 @@ Residual Network (ResNet) is a deep learning model. It is a convolutional Neural
 # Using the algorithm
 Reguardless of the version of ResNet you decide to go with, you will need to do the following: 
 - Update the "folder_path" on line 23 with the correct directory where your (augmented and balanced) training dataset it located
-- Update the "num_epochs" on line 222
+- Update the "num_epochs" on line 249. Currently set to 15, this can be adjusted at your descretion.
 
+Note: Ephochs are used as a measure of training progress and refers to one complete pass through the entire training dataset. By training the model for multiple epochs, the model gradually learns to generalize patters from the training data to unseen data, improvising its performance over time. However, training for too many epochs can lead to overfitting, where the model memorizes the training data without generalizing well to new data. Therefore, it is essential to monitor the model's performance and stop training when performance no longer improves. 
 
 # ResNet-18.py
 ResNet-18 is a relatively lightweight version of ResNet making it faster to train and deploy. It tends to gereralize well on small to medium-sized datasets. It is the algorithm we use most freqently when training our model and is recommended to start with. 
