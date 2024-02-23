@@ -19,3 +19,10 @@ ResNet-50 captures more complex features and patterns in data compared to ResNet
 
 # ResNet-152.py
 ResNet-152 is the deepest ResNet variant, providing the highest capacity for learning complex representations from data. It can capture fine-grained details and subtle features in teh data making is suitable for tasks requiring high precision. Training and fine-tuning ResNet-152 requires significant computations resources, including high-end GPUs and large amounts of memory. 
+
+# Model.pth
+Two model.pth files are included in this repository: 
+- Training_ResNet18_28DEC2021_model.pth
+- Training_ResNet50_15MAR2022_model.pth
+
+The .PTH file is the main algorithm output file which classifier uses to classify unclassified images
