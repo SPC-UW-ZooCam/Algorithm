@@ -23,6 +23,7 @@ ResNet-152 is the deepest ResNet variant, providing the highest capacity for lea
 # Algorithm Output
 The .PTH file is the main algorithm output file which classifier uses to classify unclassified images
 
-Two .PTH files can be found in the zipped file (Trained_Model_PTH.zip) here: https://drive.google.com/file/d/1LfHVUd6LbPr1tbD2zfrI7Lnph4xzbirE/view?usp=drive_link
-- Training_ResNet18_28DEC2021_model.pth
-- Training_ResNet50_15MAR2022_model.pth
+Two .PTH files can be found in the zipped file (Trained_Model_PTH.zip) here:   
+https://drive.google.com/file/d/1snu8m-qvqfNZTkhLn3mX4P_y5XxzqhE4/view?usp=drive_link   
+- Training_ResNet18_1FEB2022_model.pth
+- Training_ResNet50_15MAR2022_model.pth  
