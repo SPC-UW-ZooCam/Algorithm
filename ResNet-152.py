@@ -19,6 +19,7 @@ from torchvision.models import resnet152, ResNet152_Weights
 import matplotlib.pyplot as plt
 import time
 import os
+os.environ['KMP_DUPLICATE_LIB_OK'] = 'TRUE'
 import copy
 from torch.utils import data
 import seaborn as sn
