@@ -1,7 +1,7 @@
 # ---------------------------------------------
 # THIS ALGORITHM WAS CREATED TO TRAIN A MODEL TO IDENTIFY IMAGES
 # ORIGINAL DEVELOPER: SANDEEP JILLA OF TAMUCC
-# LAST UPDATED ON 2/22/2024 BY: DEANA CROUSER
+# LAST UPDATED ON 10/08/2024 BY: DEANA CROUSER
 # CONTACT: DEANACROUSER@GMAIL.COM
 # ---------------------------------------------
 
@@ -15,6 +15,7 @@ from PIL import Image
 import numpy as np
 import torchvision
 from torchvision import datasets, models, transforms
+from torchvision.models import resnet152, ResNet152_Weights
 import matplotlib.pyplot as plt
 import time
 import os
@@ -225,9 +226,9 @@ def visualize_model(model, num_images=40):
                     return
         model.train(mode=was_training)
 
-# Loading the pre-trained ResNet50 model
+# Loading the pre-trained ResNet152 model
 print('loading the pre-trained model...')
-model_ft = models.resnet152(pretrained=True)
+model_ft = models.resnet152(weights=ResNet152_Weights.DEFAULT) # Updated 10/8/24
 num_ftrs = model_ft.fc.in_features
 
 # Modifying the final layer to match the number of classes
